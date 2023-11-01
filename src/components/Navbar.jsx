@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo from '../assets/images/logo-agri.png'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -16,8 +17,8 @@ export default function Navbar() {
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="h-16 w-auto"
+                    src={logo}
                     alt="Your Company"
                   />
                 </div>
@@ -31,13 +32,13 @@ export default function Navbar() {
                       href="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#74dfab] hover:text-black"
                     >
-                      Team
+                      Manage Drivers
                     </a>
                     <a
                       href="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#74dfab] hover:text-black"
                     >
-                      Projects
+                      Insurance
                     </a>
                     <a
                       href="#"

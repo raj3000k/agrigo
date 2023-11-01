@@ -9,7 +9,7 @@ const Transporter=()=> {
  
     
   return (
-    <div className='bg-[#d8e6ed] h-full flex flex-col'>
+    <div className='bg-white h-full flex flex-col'>
         {/* <div className='bg-[#045930] w-full h-auto py-2 flex flex-row justify-between px-4' >
             <div className='flex flex-row'>
 
@@ -27,12 +27,12 @@ const Transporter=()=> {
        <TransportDrawer/>
        </>
        :<></>}
-       <div className='flex flex-row mt-6 p-8 justify-evenly h-full'>
+       <div className='flex flex-row mt-6 p-8 justify-evenly h-full flex-wrap'>
         <div className='flex flex-col space-y-4 h-full'>
-            <div className='bg-[#045930] w-auto h-auto p-4 rounded-xl font-bold items-center'>
-                <h1 className='font-bold justify-items-center text'>Orders</h1>
+            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold items-center flex justify-center'>
+                <h1 className='font-bold justify-items-center text-white'>Orders</h1>
             </div>
-            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold flex flex-col space-y-2'>
+            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold flex flex-row space-x-2 '>
                <button>
                <div className='bg-[#d8e6ed] w-auto h-auto p-4 rounded-xl font-bold flex flex-col justify-center items-center hover:bg-[#74dfab]'>
                     <h1>Rice- 5Ton</h1>
@@ -41,19 +41,20 @@ const Transporter=()=> {
                </button>
                <button>
                <div className='bg-[#d8e6ed] w-auto h-auto p-4 rounded-xl font-bold flex flex-col justify-center items-center  hover:bg-[#74dfab]'>
-                    <h1>ITEM</h1>
-                    <h1>Quantity</h1>
+               <h1>Rice- 5Ton</h1>
                     <h1>Location</h1>
                 </div>
                </button>
+               
             </div>
+            <button className='bg-[#5271ff] h-auto w-auto rounded-xl text-white font-bold p-2 hover:bg-blue-800'>View All Orders</button>
             
         </div>
-        <div className='flex flex-col space-y-4 h-full '>
-            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold items-center'>
-                <h1 className='font-bold justify-items-center'>Available Vehicles</h1>
+        <div className='flex flex-col space-y-4 h-full flex-wrap'>
+            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold items-center flex justify-center'>
+                <h1 className='font-bold justify-items-center text-white items-centre flex'>Available Vehicles</h1>
             </div>
-            <div className='bg-[#ffde59] w-auto h-auto p-4 rounded-xl font-bold flex flex-col space-y-2'>
+            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold flex flex-col space-y-2'>
                <button>
                <div className='bg-[#d8e6ed] w-auto h-auto p-4 rounded-xl font-bold flex flex-col justify-center items-center  hover:bg-[#74dfab]'>
                     <h1>Tata Ace: CG 04 HX 1234</h1>
@@ -67,13 +68,13 @@ const Transporter=()=> {
                 </div>
                </button>
             </div>
-            
+            <button className='bg-[#5271ff] h-auto w-auto rounded-xl text-white font-bold p-2 hover:bg-blue-800'>Manage Vehicles</button>
         </div>
-        <div className='flex flex-col space-y-4 h-full '>
-            <div className='bg-[#ffde59] w-auto h-auto p-4 rounded-xl font-bold items-center'>
-                <h1 className='font-bold justify-items-center'>In Transit</h1>
+        <div className='flex flex-col space-y-4 h-full flex-wrap'>
+            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold justify-center flex items-centre'>
+                <h1 className='font-bold justify-items-center text-white items-centre flex'>In Transit</h1>
             </div>
-            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold flex flex-col space-y-2'>
+            <div className='bg-[#00bf63] w-auto h-auto p-4 rounded-xl font-bold flex flex-row space-x-2'>
                <button>
                <div className='bg-[#d8e6ed] w-auto h-auto p-4 rounded-xl font-bold flex flex-col justify-center items-center  hover:bg-[#74dfab]'>
                     <h1>350 Kg</h1>
@@ -89,11 +90,11 @@ const Transporter=()=> {
                 </div>
                </button>
             </div>
-            
+            <button className='bg-[#5271ff] h-auto w-auto rounded-xl text-white font-bold p-2 hover:bg-blue-800'>Show Transit Details</button>
         </div>
        </div>
        
-        <LongCardImage field1={'Name'} value1={"Lekhram"}/>
+        {/* <LongCardImage field1={'Name'} value1={"Lekhram"}/> */}
     </div>
   ) 
 }
