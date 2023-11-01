@@ -1,9 +1,9 @@
 import React from "react";
 import logi from "../assets/images/logo-agri.png";
 import "../tailwind.css";
+import Cards from "../components/Cards";
 const Welcome = () => {
   return (
-
     <div className="bg-[#d8e6ed] h-full w-auto flex flex-col">
       <div className="bg-[#045930] w-full h-auto py-2 flex flex-row items-end justify-between">
         <h1 className="text-white font-bold ml-4 text-2xl justify-items-start">
@@ -35,7 +35,15 @@ const Welcome = () => {
             efficiency, reducing costs, and ensuring the freshest produce
             reaches your customers.
           </p>
+
+          <div id="Cards" className=" flex flex-row justify-between ">
+            <Cards s={"Get Best Price & Quality"} />
+            <Cards s={"Full Secure Delivery Service"} />
+            <Cards s={"All type of Agri Products"} />
+            <Cards s={"Book your order in one tap"} />
+          </div>
         </div>
+
         <div className="flex flex-col h-full w-[40%] flex-wrap  items-center  ">
           <div className="flex flex-row ">
             <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex mr-2">
@@ -51,7 +59,6 @@ const Welcome = () => {
         </div>
       </div>
     </div>
-   
   );
 };
 
