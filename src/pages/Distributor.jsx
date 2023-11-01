@@ -11,18 +11,11 @@ const Distributor = () => {
   return (
     <div className="bg-white h-full flex flex-col">
       <Navbar />
-      {drawer ? (
-        <>
-          <TransportDrawer />
-        </>
-      ) : (
-        <></>
-      )}
-      <div id="search">
+      <div id="search" className="mx-4">
         <form>
           <label
             for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only  dark:text-white "
+            class="mb-2 text-sm font-medium text-gray-900 sr-only  dark:text-white mx-"
           >
             Search
           </label>

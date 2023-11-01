@@ -10,7 +10,7 @@ const Welcome = () => {
           AgriGo
         </h1>
         <div className="flex flex-row mr-4 justify-between text-white font-bold text-xl">
-          <a className="mr-2" href="/">
+          <a className="mr-2" href="/login">
             Login
           </a>
           <a className="mr-2" href="/">

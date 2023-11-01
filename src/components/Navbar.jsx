@@ -25,12 +25,12 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href="#" className="rounded-md bg-[#74dfab] px-3 py-2 text-sm font-medium text-white">
+                    <a href="/transporter" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#74dfab] hover:text-black">
                       Dashboard
                     </a>
                     <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#74dfab] hover:text-black"
+                      href="/transporter/drivers"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-[#74dfab] hover:text-black active"
                     >
                       Manage Drivers
                     </a>

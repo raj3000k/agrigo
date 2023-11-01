@@ -4,6 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import TransportDrawer from '../components/TransportDrawer';
 import LongCardImage, { LongCardTransit } from '../components/LongCard';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 const Transporter=()=> {
     const[drawer,setDrawer]=useState(false)
@@ -48,7 +49,10 @@ const Transporter=()=> {
                </button>
                
             </div>
-            <button className='bg-[#5271ff] h-auto w-auto rounded-xl text-white font-bold p-2 hover:bg-blue-800'>View All Orders</button>
+            <Link to="/transporter/order">
+            <button className='bg-[#5271ff] h-auto w-full rounded-xl text-white font-bold p-2 hover:bg-blue-800'>View All Orders</button>
+            </Link>
+            
             
         </div>
         <div className='flex flex-col space-y-4 h-full flex-wrap w-[40%]'>
@@ -69,7 +73,10 @@ const Transporter=()=> {
                 </div>
                </button>
             </div>
-            <button className='bg-[#5271ff] h-auto w-auto rounded-xl text-white font-bold p-2 hover:bg-blue-800'>Manage Vehicles</button>
+            <Link to="/transporter/vehicles" className='w-full'>
+            <button className='bg-[#5271ff] w-full h-auto rounded-xl text-white font-bold p-2 hover:bg-blue-800' onClick={()=>{}}>Manage Vehicles</button>
+            </Link>
+           
         </div>
         
        </div>
