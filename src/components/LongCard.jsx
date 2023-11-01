@@ -35,7 +35,7 @@ export const LongCardImage=({field1,field2,field3,field4,field5,value1,value2,va
 export const LongCardTransit=({field1,field2,field3,field4,field5,field6,value1,value2,value3,value4,value5,value6})=> {
     
     return (
-      <div className='bg-[#00bf63] h-auto rounded-xl p-4 m-4 hover:bg-[#045930]'>
+      <div className='bg-[#00bf63] h-auto rounded-xl p-4 m-4 '>
           <div className='flex flex-row justify-between items-center'>
           <img src={logo} className='h-32 w-32'/>
                   <div className='flex flex-col'>
