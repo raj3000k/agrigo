@@ -3,7 +3,8 @@ import logi from "../assets/images/logo-agri.png";
 import "../tailwind.css";
 const Welcome = () => {
   return (
-    <div className="bg-[#d8e6ed] h-full w-auto flex-wrap ">
+
+    <div className="bg-[#d8e6ed] h-full w-auto flex flex-col">
       <div className="bg-[#045930] w-full h-auto py-2 flex flex-row items-end justify-between">
         <h1 className="text-white font-bold ml-4 text-2xl justify-items-start">
           AgriGo
@@ -18,8 +19,8 @@ const Welcome = () => {
           <a href="/">About Us</a>
         </div>
       </div>
-      <div className="flex flex-row mx-6 h-auto my-12">
-        <div className="flex flex-col w-auto flex-wrap h-auto">
+      <div className="bg-[#d8e6ed] flex flex-row mx-6 h-auto mt-12">
+        <div className="flex flex-col w-auto h-full">
           <div className="">
             <img className="h-64 w-64" src={logi} alt="t" />
           </div>
@@ -36,7 +37,7 @@ const Welcome = () => {
           </p>
         </div>
         <div className="flex flex-col h-full w-[40%] flex-wrap  items-center  ">
-          <div className="flex flex-row flex-wrap">
+          <div className="flex flex-row ">
             <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex mr-2">
               <h1 className="font-bold text-white text-xl">FARMER</h1>
             </div>
@@ -50,6 +51,7 @@ const Welcome = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 
