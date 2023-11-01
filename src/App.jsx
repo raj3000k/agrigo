@@ -1,13 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import './tailwind.css';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
-import Login from './pages/Login';
+import Welcome from './pages/Welcome';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Login/>}></Route>
+        <Route exact path="/" element={<Welcome/>}></Route>
       </Routes>
     </div>
   );
