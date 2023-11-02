@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import FooterWithSitemap from "../components/Footer";
+import { Link } from 'react-router-dom';
 function PlaceOrder() {
   const [products] = useState([
     { id: 1, name: 'Rice', price: 40 },
@@ -134,12 +135,15 @@ function PlaceOrder() {
               <option value="Express">Express</option>
             </select>
           </div>
+          <Link to='/distributor/category/order/transport'>
           <button
             type="submit"
             className="bg-[#1d754b] text-white py-2 px-4 rounded-full font-bold w-full hover:bg-[#5BC99C]"
           >
             Select Transporter
           </button>
+          </Link>
+          
         </form>
       </div>
      <FooterWithSitemap/>
