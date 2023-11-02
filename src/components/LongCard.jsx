@@ -105,6 +105,46 @@ export const LongCardTransit=({field1,field2,field3,field4,field5,field6,value1,
     )
   }
   
+  export const ShowTransportCard=({name,vehicle,number,quantity,rate,Insurance, expectedDelivery, location,orderUrl})=> {
+    
+    return (
+      <div className='bg-white h-auto rounded-xl border-2 border-[#00bf63] p-2 m-4 w-[50%] flex flex-col justify-between-'>
+        <h1 className='flex self-centre text-lg font-bold my-2'>Name:{name}</h1>
+        <h1 className='text-black font-bold text-lg'>Vehicle: {vehicle}</h1>
+          <div className='flex flex-row justify-between items-center'>
+          <img src={logo} className='h-32 w-32'/>
+                  <div className='flex flex-col'>
+                  <h1 className='text-black font-bold text-lg'>Number: {number}</h1>
+                  <h1 className='text-black font-bold text-lg'>Max Quantity: {quantity}</h1>
+                  <h1 className='text-black font-bold text-lg'>Rate / KM: {rate}</h1>
+  
+              </div>
+              <div className='flex flex-row justify-between'>
+              
+              <div className='flex flex-col'>
+                  <h1 className='text-black font-bold text-lg'>Insurance: {Insurance}</h1>
+                  <h1 className='text-black font-bold text-lg'>ETA: {expectedDelivery}</h1>
+  
+              </div>
+              </div>
+              <div className='flex flex-row justify-between'>
+              
+              <div className='flex flex-col space-y-2'>
+                <Link to={orderUrl}>
+                <button className='bg-[#43ee43] p-2 rounded-2xl text-white font-bold w-full'>Choose Transport</button>
+                </Link>
+              
+              <button className='bg-[#5271ff] p-2 rounded-2xl text-white font-bold'>Contact Transporter</button>
+  
+              {/* <button className='bg-red-400 p-2 rounded-2xl text-white font-bold'>Delete Vehicle</button> */}
+              </div>
+              </div>  
+  
+          </div>
+      </div>
+    )
+  }
+
   export const LongCardWarehouse=({name,item,quantity,grade,rating, price, location,orderUrl})=> {
     
     return (
