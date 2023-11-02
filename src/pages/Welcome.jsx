@@ -5,11 +5,11 @@ import Cards from "../components/Cards";
 const Welcome = () => {
   return (
     <div className="bg-[#d8e6ed] h-full w-auto flex flex-col">
-      <div className="bg-[#045930] w-full h-auto py-2 flex flex-row items-end justify-between">
+      <div className="bg-[#045930] w-full h-auto py-2 px-2  flex flex-row items-end justify-between">
         <h1 className="text-white font-bold ml-4 text-2xl justify-items-start">
           AgriGo
         </h1>
-        <div className="flex flex-row mr-4 justify-between text-white font-bold text-xl">
+        <div className="flex flex-row mr-4 justify-between text-white font-bold space-x-4 text-xl ">
           <a className="mr-2" href="/login">
             Login
           </a>
@@ -35,16 +35,17 @@ const Welcome = () => {
             efficiency, reducing costs, and ensuring the freshest produce
             reaches your customers.
           </p>
+          <div className="h-96 w-full bg-[#d8e6ed]"></div>
 
           <div id="Cards" className=" flex flex-row justify-between ">
-            <Cards s={"Get Best Price & Quality"} />
-            <Cards s={"Full Secure Delivery Service"} />
+            <Cards s={"Get Best Price & Quality at one place"} />
+            <Cards s={"Safe & Secure Delivery Service"} />
             <Cards s={"All type of Agri Products"} />
             <Cards s={"Book your order in one tap"} />
           </div>
         </div>
 
-        <div className="flex flex-col h-full w-[40%] flex-wrap  items-center  ">
+        <div className="flex flex-col h-full w-auto flex-wrap  items-center  ">
           <div className="flex flex-row ">
             <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex mr-2">
               <h1 className="font-bold text-white text-xl">FARMER</h1>
