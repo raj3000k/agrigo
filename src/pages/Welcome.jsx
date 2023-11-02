@@ -2,6 +2,9 @@ import React from "react";
 import logi from "../assets/images/logo-agri.png";
 import "../tailwind.css";
 import Cards from "../components/Cards";
+import FooterWithLogo from "../components/Footer"
+
+
 const Welcome = () => {
   return (
     <div className="bg-[#d8e6ed] h-full w-auto flex flex-col">
@@ -19,7 +22,7 @@ const Welcome = () => {
           <a href="/">About Us</a>
         </div>
       </div>
-      <div className="bg-[#d8e6ed] flex flex-row mx-6 h-auto mt-12">
+      <div className="bg-[#d8e6ed] flex flex-row mx-6 h-auto mt-12 mb-12">
         <div className="flex flex-col w-auto h-full">
           <div className="">
             <img className="h-64 w-64" src={logi} alt="t" />
@@ -35,7 +38,8 @@ const Welcome = () => {
             efficiency, reducing costs, and ensuring the freshest produce
             reaches your customers.
           </p>
-          <div className="h-96 w-full bg-[#d8e6ed]"></div>
+          
+          <div className="h-36 w-full bg-[#d8e6ed]"></div>
 
           <div id="Cards" className=" flex flex-row justify-between ">
             <Cards s={"Get Best Price & Quality at one place"} />
@@ -57,8 +61,11 @@ const Welcome = () => {
           <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex">
             <h1 className="font-bold text-white text-xl">TRANSPORTER</h1>
           </div>
+          
         </div>
+        
       </div>
+      <FooterWithLogo/>
     </div>
   );
 };
