@@ -3,12 +3,12 @@ import logo from '../assets/images/logo-agri.png'
 import { Link } from 'react-router-dom'
 
 
-export const LongCardImage=({field1,field2,field3,field4,field5,field6,value1,value2,value3,value4,value5,value6})=> {
+export const LongCardImage=({field1,field2,field3,field4,field5,field6,value1,value2,value3,value4,value5,value6,image})=> {
     
   return (
     <div className='bg-[#00bf63] h-auto rounded-xl p-4 m-4 w-full'>
         <div className='flex flex-row justify-between items-center'>
-        <img src={logo} className='h-32 w-32'/>
+        <img src={image} className='h-32 w-32'/>
                 <div className='flex flex-col'>
                 <h1 className='text-white font-bold text-lg'>{field1}: {value1}</h1>
                 <h1 className='text-white font-bold text-lg'>{field2}: {value2}</h1>

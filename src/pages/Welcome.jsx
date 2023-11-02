@@ -53,10 +53,10 @@ const Welcome = () => {
         <div className="flex flex-col h-full w-auto flex-wrap  items-center  ">
           <div className="flex flex-row ">
             <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex mr-2">
-              <h1 className="font-bold text-white text-xl">FARMER</h1>
+              <h1 className="font-bold text-white text-xl">WAREHOUSE</h1>
             </div>
             <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex">
-              <h1 className="font-bold text-white text-xl">PURCHASER</h1>
+              <h1 className="font-bold text-white text-xl">DISTRIBUTOR</h1>
             </div>
           </div>
           <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex">

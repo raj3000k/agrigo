@@ -14,7 +14,7 @@ const Warehouse = () => {
           </button>
           <h1 className="text-black font-bold text-2xl ml-4">User</h1>
         </div>
-        <h1 className="text-black font-bold text-2xl mr-2">Transporter</h1>
+        <h1 className="text-black font-bold text-2xl mr-2">Warehouse</h1>
       </div>
 
       {drawer && <TransportDrawer />}
@@ -84,6 +84,7 @@ const Warehouse = () => {
               </div>
             </button>
           </div>
+          <button className='h-auto w-auto bg-blue-400 rounded-xl text-white'>Update Repository</button>
         </div>
 
         <div className="flex flex-col space-y-4 w-1/3">
@@ -112,9 +113,12 @@ const Warehouse = () => {
             </button>
             </div>
             <div className="mt-auto flex justify-end pr-4">
-        <button className="bg-[#ff5b5b] text-white px-4 py-2 rounded-full font-bold" >
+              <a href='/'>
+              <button className="bg-[#ff5b5b] text-white px-4 py-2 rounded-full font-bold" >
           <h1>Log Out</h1>
         </button>
+              </a>
+        
       </div>
           </div>
        
