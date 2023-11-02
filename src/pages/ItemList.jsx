@@ -16,6 +16,7 @@ import Capsicum from '../assets/images/Capsicum.jpg'
 import Carrot from '../assets/images/Carrot.jpg'
 import kiwi from '../assets/images/kiwi.jpg'
 import whiteRice from '../assets/images/White Rice.jpg'
+import FooterWithSitemap from "../components/Footer";
 const ItemList=()=>{
     const pathName = window.location.pathname
     const item=pathName.split('/')[3]
@@ -50,7 +51,7 @@ const ItemList=()=>{
             item: 'Kiwi',
             url: "/distributor/category/warehouse/Kiwi"
         },
-
+        
         
       ]
     return(
@@ -70,6 +71,7 @@ const ItemList=()=>{
 <Link to="/distributor/category/warehouse/all">
 <button className='bg-[#5271ff] p-2 rounded-2xl text-white font-bold hover:bg-[#36499e] mt-4 self-center justify-center items-center'>Show All Warehouses</button>
 </Link>
+<FooterWithSitemap/>
 </div>
         </div>
         

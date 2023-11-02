@@ -2,6 +2,7 @@ import React from 'react'
 import { LongCardWarehouse } from '../components/LongCard'
 import Navbar from '../components/Navbar'
 import OrderDialog from '../components/OrderDialog'
+import FooterWithSitemap from "../components/Footer";
 
 export default function ShowWarehouse() {
     const pathName = window.location.pathname
@@ -53,6 +54,7 @@ export default function ShowWarehouse() {
                     return <LongCardWarehouse name={data.Name} location={data.Location} item={data.Item} rating={data.Rating} price={data.Price} quantity={data.Quantity} orderUrl={data.orderUrl}/>
                 })}
         </div>
+        <FooterWithSitemap/>
         {/* <OrderDialog/> */}
     </div>
   )

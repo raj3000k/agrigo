@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-
+import FooterWithSitemap from "../components/Footer";
 function PlaceOrder() {
   const [products] = useState([
     { id: 1, name: 'Rice', price: 40 },
@@ -142,7 +142,7 @@ function PlaceOrder() {
           </button>
         </form>
       </div>
-     
+     <FooterWithSitemap/>
       
     </div>
   );
