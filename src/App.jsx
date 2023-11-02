@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import ItemList from "./pages/ItemList";
 import ShowWarehouse from "./pages/ShowWarehouse";
 import Track from "./pages/Track";
+import PlaceOrder from "./pages/PlaceOrder";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/distributor/category/:category" element={<ItemList/>}></Route>
         <Route exact path="/distributor/category/:category" element={<ItemList/>}></Route>
         <Route exact path="/distributor/category/warehouse/:item" element={<ShowWarehouse/>}></Route>
+        <Route exact path="/distributor/category/order" element={<PlaceOrder/>}></Route>
         <Route exact path="/transporter/order" element={<Order />}></Route>
         <Route exact path="/" element={<Welcome/>}></Route>
         <Route exact path="/transporter" element={<Transporter/>}></Route>

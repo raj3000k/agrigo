@@ -14,6 +14,7 @@ export default function ShowWarehouse() {
         Quantity: "5 Ton",
         Rating: "7/10",
         Price: "95/Kg",
+        orderUrl:'/distributor/category/order'
       },
       {
         Name: "Vaishnave Storage Limited",
@@ -22,6 +23,7 @@ export default function ShowWarehouse() {
         Quantity: "5 Ton",
         Rating: "7/10",
         Price: "95/Kg",
+        orderUrl:'/distributor/category/order'
       },
       {
         Name: "Somya Storage Limited",
@@ -30,6 +32,7 @@ export default function ShowWarehouse() {
         Quantity: "8 Ton",
         Rating: "9/10",
         Price: "10/Kg",
+        orderUrl:'/distributor/category/order'
       },
       {
         Name: "Gupta Storage House",
@@ -38,6 +41,7 @@ export default function ShowWarehouse() {
         Quantity: "5 Ton",
         Rating: "6/10",
         Price: "104/Kg",
+        orderUrl:'/distributor/category/order'
       }
     ];
   return (
@@ -46,7 +50,7 @@ export default function ShowWarehouse() {
         <h1 className='self-center text-lg font-bold'>Warehouses Available For:{item} </h1>
         <div className='flex flex-row justify-evenly flex-wrap'>
                 {warehouseData.map((data)=>{
-                    return <LongCardWarehouse name={data.Name} location={data.Location} item={data.Item} rating={data.Rating} price={data.Price} quantity={data.Quantity}/>
+                    return <LongCardWarehouse name={data.Name} location={data.Location} item={data.Item} rating={data.Rating} price={data.Price} quantity={data.Quantity} orderUrl={data.orderUrl}/>
                 })}
         </div>
         {/* <OrderDialog/> */}
