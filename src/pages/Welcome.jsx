@@ -2,7 +2,8 @@ import React from "react";
 import logi from "../assets/images/logo-agri.png";
 import "../tailwind.css";
 import Cards from "../components/Cards";
-import FooterWithLogo from "../components/Footer"
+import FooterWithSitemap from "../components/Footer";
+import FooterWithLogo from "../components/Footer2";
 
 
 const Welcome = () => {
@@ -38,7 +39,7 @@ const Welcome = () => {
             efficiency, reducing costs, and ensuring the freshest produce
             reaches your customers.
           </p>
-          
+
           <div className="h-36 w-full bg-[#d8e6ed]"></div>
 
           <div id="Cards" className=" flex flex-row justify-between ">
@@ -61,10 +62,9 @@ const Welcome = () => {
           <div className="h-40 w-40 rounded-full bg-green-500 items-center justify-center flex">
             <h1 className="font-bold text-white text-xl">TRANSPORTER</h1>
           </div>
-          
         </div>
-        
       </div>
+      <FooterWithSitemap />
       <FooterWithLogo/>
     </div>
   );

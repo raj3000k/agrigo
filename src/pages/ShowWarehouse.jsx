@@ -6,24 +6,40 @@ import OrderDialog from '../components/OrderDialog'
 export default function ShowWarehouse() {
     const pathName = window.location.pathname
     const item=pathName.split('/')[4]
-    const warehouseData=[
-        {
-            Name: 'Vaishnave Storage Limited',
-            Location:'Jammu & Kashmir',
-            Item:'Chakri Apple',
-            Quantity: '5 Ton',
-            Rating:'7/10',
-            Price:'95/Kg'
-        },
-        {
-            Name: 'Vaishnave Storage Limited',
-            Location:'Jammu & Kashmir',
-            Item:'Chakri Apple',
-            Quantity: '5 Ton',
-            Rating:'7/10',
-            Price:'95/Kg'
-        }
-    ]
+    const warehouseData = [
+      {
+        Name: "Vaishnave Storage Limited",
+        Location: "Jammu & Kashmir",
+        Item: "Chakri Apple",
+        Quantity: "5 Ton",
+        Rating: "7/10",
+        Price: "95/Kg",
+      },
+      {
+        Name: "Vaishnave Storage Limited",
+        Location: "Jammu & Kashmir",
+        Item: "Chakri Apple",
+        Quantity: "5 Ton",
+        Rating: "7/10",
+        Price: "95/Kg",
+      },
+      {
+        Name: "Somya Storage Limited",
+        Location: "Indore",
+        Item: "Potatos",
+        Quantity: "8 Ton",
+        Rating: "9/10",
+        Price: "10/Kg",
+      },
+      {
+        Name: "Gupta Storage House",
+        Location: "Gwalior",
+        Item: "Brown Rice",
+        Quantity: "5 Ton",
+        Rating: "6/10",
+        Price: "104/Kg",
+      }
+    ];
   return (
     <div className='flex flex-col'>
         <Navbar/>
@@ -33,7 +49,7 @@ export default function ShowWarehouse() {
                     return <LongCardWarehouse name={data.Name} location={data.Location} item={data.Item} rating={data.Rating} price={data.Price} quantity={data.Quantity}/>
                 })}
         </div>
-        <OrderDialog/>
+        {/* <OrderDialog/> */}
     </div>
   )
 }
