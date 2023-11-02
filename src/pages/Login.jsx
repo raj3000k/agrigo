@@ -2,6 +2,7 @@ import { Fragment,useState } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import logo from '../assets/images/logo-agri.png'
+import { Link } from 'react-router-dom'
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -144,12 +145,14 @@ export default function Login() {
               </div>
   
               <div>
-                <button
+               <Link to={user==="Warehouse"? '/warehouse': user==="Transporter"?'/transporter':'/distributor'}>
+               <button
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                 >
                   Sign in
                 </button>
+               </Link>
               </div>
             </form>
   

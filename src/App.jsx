@@ -9,6 +9,8 @@ import ManageVehicles from './pages/ManageVehicles';
 import Order from './pages/Order'
 import Warehouse from "./pages/Warehouse";
 import Login from "./pages/Login";
+import ItemList from "./pages/ItemList";
+import ShowWarehouse from "./pages/ShowWarehouse";
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,9 @@ function App() {
 
         <Route exact path="/transporter" element={<Transporter />}></Route>
         <Route exact path="/distributor" element={<Distributor />}></Route>
+        <Route exact path="/distributor/category/:category" element={<ItemList/>}></Route>
+        <Route exact path="/distributor/category/:category" element={<ItemList/>}></Route>
+        <Route exact path="/distributor/category/warehouse/:item" element={<ShowWarehouse/>}></Route>
         <Route exact path="/transporter/order" element={<Order />}></Route>
         <Route exact path="/" element={<Welcome/>}></Route>
         <Route exact path="/transporter" element={<Transporter/>}></Route>

@@ -104,3 +104,39 @@ export const LongCardTransit=({field1,field2,field3,field4,field5,field6,value1,
     )
   }
   
+  export const LongCardWarehouse=({name,item,quantity,grade,rating, price, location})=> {
+    
+    return (
+      <div className='bg-white h-auto rounded-xl border-2 border-[#00bf63] p-2 m-4 w-[50%] flex flex-col justify-between-'>
+        <h1 className='flex self-centre text-lg font-bold my-2'>Name:{name}</h1>
+        <h1 className='text-black font-bold text-lg'>Location: {location}</h1>
+          <div className='flex flex-row justify-between items-center'>
+          <img src={logo} className='h-32 w-32'/>
+                  <div className='flex flex-col'>
+                  <h1 className='text-black font-bold text-lg'>Item: {item}</h1>
+                  <h1 className='text-black font-bold text-lg'>Quantity: {quantity}</h1>
+                  <h1 className='text-black font-bold text-lg'>Grade: {grade}</h1>
+  
+              </div>
+              <div className='flex flex-row justify-between'>
+              
+              <div className='flex flex-col'>
+                  <h1 className='text-black font-bold text-lg'>Rating: {rating}</h1>
+                  <h1 className='text-black font-bold text-lg'>Price/ Kg: {price}</h1>
+  
+              </div>
+              </div>
+              <div className='flex flex-row justify-between'>
+              
+              <div className='flex flex-col space-y-2'>
+              <button className='bg-[#43ee43] p-2 rounded-2xl text-white font-bold'>Order</button>
+              <button className='bg-[#5271ff] p-2 rounded-2xl text-white font-bold'>Show Previous Orders</button>
+  
+              {/* <button className='bg-red-400 p-2 rounded-2xl text-white font-bold'>Delete Vehicle</button> */}
+              </div>
+              </div>  
+  
+          </div>
+      </div>
+    )
+  }

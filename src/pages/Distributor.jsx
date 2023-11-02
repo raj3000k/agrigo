@@ -4,10 +4,52 @@ import { AiOutlineMenu } from "react-icons/ai";
 import TransportDrawer from "../components/TransportDrawer";
 import LongCardImage, { LongCardTransit } from "../components/LongCard";
 import Navbar from "../components/Navbar";
+import { ImageCard } from "../components/Cards";
+import fruits from '../assets/images/fruits.jpg'
+import vegetables from '../assets/images/vegetables.jpg'
+import rice from '../assets/images/rice.jpg'
+import pulses from '../assets/images/dal.jpg'
+import grains from '../assets/images/grains.jpg'
+import spices from '../assets/images/spices.jpg'
+import image from '../assets/images/AgriGo.png'
+import { Link, useNavigate } from "react-router-dom";
 
 const Distributor = () => {
   const [drawer, setDrawer] = useState(false);
-
+  const catData=[
+    {
+      Image:fruits,
+      category:'Fruits',
+      url: '/distributor/category/Fruits'
+    },
+    {
+      Image:vegetables,
+      category:'Vegetables',
+      url: '/distributor/category/Vegetables'
+    },
+    {
+    Image:rice,
+      category:'Rice',
+      url: '/distributor/category/Rice'
+    },
+    {
+      Image:pulses,
+      category:'Pulses',
+      url: '/distributor/category/Pulses'
+    },
+    {
+      Image:grains,
+      category:'Whole Grain',
+      url: '/distributor/category/Grains'
+    },
+    {
+      Image:spices,
+      category:'Spices',
+      url: '/distributor/category/Spices'
+    },
+    
+  ]
+  const navigate=useNavigate();
   return (
     <div className="bg-white h-full flex flex-col">
       <Navbar />
@@ -53,9 +95,23 @@ const Distributor = () => {
           </div>
         </form>
       </div>
+    <h1 className="font-bold ml-4 text-lg">Search By Category</h1>
+      <div className="flex flex-row justify-evenly m-4 flex-wrap">
+        {catData.map((data)=>{
+          return <div>
+            <ImageCard image={data.Image} category={data.category} onClick={data.url}/>
+          </div>
+        })}
+      {/* <ImageCard image={fruits} category={'Fruits'}/>
+      <ImageCard image={fruits} category={'Fruits'}/> */}
+      </div>
+      <Link to='/distributor/category/all'>
+      <button className='bg-[#5271ff] p-2 rounded-2xl text-white font-bold w-[30%] self-centre'>View All Items</button>
+
+      </Link>
       <div className="flex flex-row mt-6 p-8 justify-evenly h-full flex-wrap">
         <div className="flex flex-col space-y-4 h-full w-[40%]">
-          <div className="bg-[#00bf63] w-full h-auto p-4 rounded-xl font-bold items-center flex justify-center">
+          <div className="bg-[#eb625b] w-full h-auto p-4 rounded-xl font-bold items-center flex justify-center">
             <h1 className="font-bold justify-items-center text-white">
               My Orders
             </h1>
@@ -91,14 +147,14 @@ const Distributor = () => {
         <div className="w-auto rounded-xl font-bold flex flex-col space-y-2 justify-center items-center">
           <button className="w-full">
             <LongCardTransit
-              field1={"Driver Name"}
-              value1={"Ramesh"}
+              field1={"Warehouse"}
+              value1={"Rashmi Storage, Jammu"}
               field2={"Vehicle"}
               value2={"CG 04 ZD 1643"}
               field3={"Item"}
-              value3={"Rice"}
+              value3={"Apple"}
               field4={"Route"}
-              value4={"Raipur-Delhi"}
+              value4={"Jammu-Delhi"}
               field5={"Invoice No"}
               value5={12}
               field6={"Legal Status"}
