@@ -11,8 +11,9 @@ const DriverDetails=()=>{
             </div>
             <div className=' rounded-xl font-bold flex flex-col space-y-2 justify-center items-center mx-4'>
 
-                <LongCardImage field1={'Driver Name'} value1={'Suresh Sahu'} field2={'DOB'} value2={'23 Dec 2002'} field3={'License Number'} value3={'CG-125678'} field4={'Work Status'} value4={'Free'} value5={"Verified"} field5={'Verification'} />
-                <LongCardImage/>
+                <LongCardImage field1={'Driver Name'} value1={'Suresh Sahu'} field2={'DOB'} value2={'23 Dec 1998'} field3={'License Number'} value3={'CG-125678'} field4={'Work Status'} value4={'Free'} value5={"Verified"} field5={'Verification'} />
+                <LongCardImage field1={'Driver Name'} value1={'Piyush Bisen'} field2={'DOB'} value2={'02 Nov 1995'} field3={'License Number'} value3={'CG-123669'} field4={'Work Status'} value4={'Free'} value5={"Verified"} field5={'Verification'} />
+
             </div>
         </div>
     )
