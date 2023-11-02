@@ -11,6 +11,7 @@ import Warehouse from "./pages/Warehouse";
 import Login from "./pages/Login";
 import ItemList from "./pages/ItemList";
 import ShowWarehouse from "./pages/ShowWarehouse";
+import Track from "./pages/Track";
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/transporter/drivers" element={<DriverDetails/>}></Route>
         <Route exact path="/transporter/vehicles" element={<ManageVehicles/>}></Route>
         <Route exact path="/warehouse" element={<Warehouse/>}></Route>
+        <Route exact path="/track" element={<Track/>}></Route>
 
       </Routes>
     </div>
